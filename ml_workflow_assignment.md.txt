@@ -1,0 +1,21 @@
+# ML Workflow Assignment
+
+## Task 1
+
+Label:
+repeat_purchase_flag; 
+Justification: This is the target variable indicating whether a customer makes a repeat purchase within 30 days.
+
+Data Leakage Column:
+discount_used_on_repeat_order;  
+Justification: This feature contains information about the repeat purchase itself, which occurs after the prediction and would leak future data into the model.
+
+---
+
+## Task 2
+
+Step 1: Data Cleaning & Preprocessing  
+Why: Ensures data quality by handling missing values, outliers, and formatting issues before training.
+
+Step 2: Train-Test Split / Validation Setup  
+Why: Helps evaluate model performance on unseen data and prevents overfitting.
